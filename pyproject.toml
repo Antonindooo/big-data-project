@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "big-data-project"
+version = "0.1.0"
+description = ""
+authors = ["Antonindooo <antodraxler@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+pandas = "^2.2.3"
+jupyter = "^1.1.1"
+yfinance = "^0.2.51"
+streamlit = "^1.41.1"
+findspark = "^2.0.1"
+pyspark = "^3.5.4"
+seaborn = "^0.13.2"
+matplotlib = "^3.10.0"
+mplfinance = "^0.12.10b0"
+plotly = "^5.24.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
