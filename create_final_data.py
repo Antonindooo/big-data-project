@@ -2,7 +2,7 @@
 File use to create final data like monthly, yearly or daily one from data/intermediate dataframe
 and save all these new data to data/final
 """
-from src.transformation.constants import SYMBOLS
+from constants import SYMBOLS
 
 import findspark
 from pyspark.sql import SparkSession

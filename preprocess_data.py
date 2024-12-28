@@ -1,7 +1,7 @@
 """
 File use to load data from yfinance API, preprocess it and save in data/intermediate
 """
-from src.transformation.constants import SYMBOLS
+from constants import SYMBOLS
 
 import findspark
 from pyspark.sql import SparkSession, DataFrame
