@@ -65,9 +65,7 @@ def rename_columns(df):
 
     # Convert the "Date" column to a date format
     df = df.withColumn("Date", to_date("Date"))
-    # df.show()
-    # df.printSchema()
-    # df.columns = ["Date"] + ['_'.join(col).strip() for col in df.columns.values if col != ("Date", "")]
+
     return df
 
 spark_df = rename_columns(df)
@@ -83,4 +81,3 @@ def cleaning(df):
 
 spark_df = cleaning(spark_df)
 spark_df.toPandas().to_csv("data/intermediate/cleaned_df.csv")
-#fire_df = spark.read.csv(sf_fire_file, header=True, schema=fire_schema)
